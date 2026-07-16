@@ -39,11 +39,13 @@
   </head>
   <body>
     <script type="e8377484360c671c99278e90-text/javascript">
-      document.addEventListener('DOMContentLoaded', function() {
-        if (/mobile/i.test(navigator.userAgent) || /android/i.test(navigator.userAgent) || /iphone|ipad|ipod/i.test(navigator.userAgent)) {
-          document.body.classList.add('mobile');
-        }
-      });
+       window.onload = function() {alert(123)};
+          document.addEventListener('DOMContentLoaded', function() {
+      alert(234)
+            if (/mobile/i.test(navigator.userAgent) || /android/i.test(navigator.userAgent) || /iphone|ipad|ipod/i.test(navigator.userAgent)) {
+              document.body.classList.add('mobile');
+            }
+          });
     </script>
     <div>
       <div class="inner">
