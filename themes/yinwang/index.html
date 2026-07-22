@@ -90,6 +90,17 @@
           </li>
           {{ /articleList }}
         </ul>
+
+        {{ #articleList.length }}
+        <div class="paginator">
+          {{ #pageNewer }}
+          <a href="{{ &url }}" class="extend prev">← 上一页</a>
+          {{ /pageNewer }}
+          {{ #pageOlder }}
+          <a href="{{ &url }}" class="extend next">下一页 →</a>
+          {{ /pageOlder }}
+        </div>
+        {{ /articleList.length }}
       </div>
       <div class="oldblog">
         <p class="text-center">{{ &OPT.copyRight }}</p>
